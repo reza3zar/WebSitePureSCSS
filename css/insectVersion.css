@@ -1,0 +1,35 @@
+body {
+  background: black;
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  width: 20%;
+  border-radius: 10px;
+  background-color: #bbf;
+}
+
+.container .inner {
+  -webkit-clip-path: inset(0% 0% 0% 100%);
+          clip-path: inset(0% 0% 0% 100%);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.container:hover .inner {
+  -webkit-clip-path: inset(0% 0% 0% 0%);
+          clip-path: inset(0% 0% 0% 0%);
+}
+
+.container img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=insectVersion.css.map */

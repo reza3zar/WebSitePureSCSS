@@ -1,0 +1,29 @@
+body{
+    background: black;
+    display: grid;
+    height: 100vh;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.container{
+    width: 20%;
+    border-radius: 10px; 
+    background-color:#bbf;
+    .inner{
+        clip-path: inset(0% 0% 0% 100%);
+        transition: all .5s ease-in-out;
+    }
+
+    &:hover .inner {
+        clip-path: inset(0% 0% 0% 0%);
+    }
+
+  
+  img{
+    width:100%;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,20 @@
+body {
+  background: linear-gradient(45deg, orange, purple);
+  background-attachment: fixed;
+  display: -ms-grid;
+  display: grid;
+}
+
+.card {
+  width: 30%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.card .content .circle {
+  position: relative;
+  -webkit-clip-path: circle(30%);
+          clip-path: circle(30%);
+  background-color: red;
+}
+/*# sourceMappingURL=card.css.map */

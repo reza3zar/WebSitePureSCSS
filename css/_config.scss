@@ -1,0 +1,24 @@
+ 
+    $primaryColor:black;
+    $secondaryColor:orange;
+    $lightColor:white;
+
+    *{
+        box-sizing: border-box;
+        margin:0;
+        padding: 0;
+    }
+
+    @mixin transition-ease{
+        transition: all 850ms ease-in-out;
+    }
+
+    @function set-text-color($color){
+        @return #fff;
+        // @if (lightness(($color)>40%)){
+        //     @return #000;
+        // }@else{
+        //     @return #fff;
+        // } 
+    }
+ 

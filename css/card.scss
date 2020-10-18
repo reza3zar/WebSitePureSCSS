@@ -1,0 +1,17 @@
+body{
+    background:linear-gradient(45deg, orange, purple);
+    background-attachment: fixed;
+    display: grid;
+}
+
+.card{
+    width: 30%;
+    background-color:white;
+    border-radius: 10px;
+
+    .content .circle{
+        position: relative;
+       clip-path: circle(30%);
+       background-color: red;
+    }
+}
