@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+  position: fixed;
+  background: #22242A;
+  padding: 20px;
+  width: 100%;
+  height: 60px;
+}
+
+header label #sidebar_btn {
+  z-index: 1;
+  color: #fff;
+  margin: 5px auto;
+  left: 300px;
+  position: fixed;
+  cursor: pointer;
+  display: block;
+}
+
+header label #sidebar_btn:hover {
+  background: #19b3d3;
+}
+
+header .left_area h3 {
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 1100;
+}
+
+header .left_area h3 span {
+  color: orange;
+}
+
+header .logout_btn {
+  padding: 5px;
+  background: #19b3d3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  margin: 17px auto;
+  margin-right: 1rem;
+  border-radius: 2px;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: background 750ms ease-in;
+  transition: background 750ms ease-in;
+}
+
+header .logout_btn:hover {
+  background: #0d9dbb;
+}
+
+#check:checked ~ .sidebar {
+  left: -190px;
+}
+
+#check:checked ~ .sidebar a {
+  font-size: 20px;
+  margin-left: 170px;
+  width: 80px;
+}
+
+#check:checked ~ .sidebar a span {
+  display: none;
+}
+
+#check:checked ~ .content {
+  margin-left: 60px;
+}
+
+.content {
+  margin-left: 250px;
+  background: url(../assets/4db32dbfd27b2eeb12cfc49661ede627.jpg) no-repeat;
+  background-position: center;
+  height: 100vh;
+  background-size: cover;
+  -webkit-transition: margin-left 250ms ease-in-out;
+  transition: margin-left 250ms ease-in-out;
+}
+
+.sidebar {
+  background: #2f323A;
+  height: 100%;
+  margin-top: 60px;
+  padding-top: 30px;
+  width: 250px;
+  position: fixed;
+  left: 0;
+  -webkit-transition: left 250ms ease-in-out;
+  transition: left 250ms ease-in-out;
+}
+
+.sidebar .profile_image {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin-top: 10px;
+}
+
+.sidebar h4 {
+  color: #ccc;
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+
+.sidebar i {
+  padding-right: 10px;
+}
+
+.sidebar .menu_Items a {
+  display: block;
+  color: #fff;
+  font-size: 1.4rem;
+  padding-left: 40px;
+  line-height: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-style: normal;
+  -webkit-transition: background 450ms ease-in-out;
+  transition: background 450ms ease-in-out;
+}
+
+.sidebar .menu_Items a:hover {
+  background: #19b3d3;
+}
+/*# sourceMappingURL=sideBar.css.map */

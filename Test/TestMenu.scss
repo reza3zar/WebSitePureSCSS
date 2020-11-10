@@ -1,0 +1,75 @@
+$primaryColor:black;
+$secondaryColor:orange;
+$lightColor:white;
+
+
+body{
+    background:linear-gradient(95deg,$secondaryColor,$lightColor);
+}
+
+*{
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.imgQuiz{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    z-index: 111111;
+}
+
+.quizForm{
+    visibility: hidden;
+    margin: 0;
+    color:$lightColor;
+    background-color: $primaryColor;
+    height: 100vh;
+    // width: 100vw;;
+    opacity: 0.98;
+    z-index: 11111;
+    transform: translateY(-100%);
+    overflow: hidden;
+
+    transition: all 750ms ease-in-out;
+
+    
+
+    &.open{
+        visibility: visible; 
+        transform: translateY(0);
+    }
+}
+
+.mainQuiz{
+    padding: 10rem;
+
+
+
+.quizeOption{
+    font-size: 2rem;
+    padding: 1rem;
+   color: $lightColor;
+   transform: translateX(100vw) ;
+   overflow: hidden;
+   transition: all 950ms ease-in-out;
+
+   &.open{
+    transform: translateX(0);
+}
+}
+} 
+
+@for $i from 1 through 10 {
+    .quizeOption:nth-child(#{$i}){
+        transition-delay: ($i*0.1s)+0.15s;
+    } 
+    
+}

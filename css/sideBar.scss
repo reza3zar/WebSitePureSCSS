@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+
+
+header{
+    position: fixed;
+    background: #22242A;
+    padding: 20px;
+    width: 100%;
+    height: 60px;
+
+    label #sidebar_btn{
+        z-index: 1;
+        color: #fff;
+        margin: 5px auto;
+        left: 300px;
+        position: fixed;
+        cursor: pointer;
+        display: block;
+
+        &:hover{
+            background: #19b3d3;
+        }
+    }
+
+ 
+
+    .left_area h3{
+        color: #fff;
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: 1100;
+
+        & span{
+            color:orange
+        }
+    }
+
+    .logout_btn{
+        padding: 5px;
+        background: #19b3d3;
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #fff;
+        margin: 17px auto;
+        margin-right: 1rem;
+        border-radius: 2px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 750ms ease-in;
+
+        &:hover{
+            background:#0d9dbb;
+        }
+    }
+
+
+}
+
+#check:checked~ .sidebar{
+
+    left:-190px;
+    & a{
+        font-size: 20px;
+        margin-left: 170px;
+        width: 80px;
+    }
+
+    & a span{
+        display: none;
+    }
+}
+
+#check:checked~ .content{
+    margin-left: 60px;
+}
+
+.content{
+    margin-left: 250px;
+    background: url(../assets/4db32dbfd27b2eeb12cfc49661ede627.jpg) no-repeat;
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+
+    transition: margin-left 250ms ease-in-out;
+}
+
+.sidebar{
+    background: #2f323A;
+    height: 100%;
+    margin-top: 60px;
+    padding-top: 30px;
+    width: 250px;
+    position: fixed;
+    left: 0;
+    transition: left 250ms ease-in-out   ;
+
+    .profile_image{
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        margin-top: 10px;
+    }
+
+    h4{
+        color: #ccc;
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+
+    i{
+        padding-right: 10px;
+    }
+
+    .menu_Items{
+
+        a{
+            display: block;
+            color:#fff;
+            font-size: 1.4rem;
+            padding-left: 40px;
+            line-height: 60px;
+            box-sizing: border-box;
+            font-style: normal;
+            transition: background 450ms ease-in-out;
+            &:hover{
+                background: #19b3d3;
+            }
+        }
+
+    }
+
+}

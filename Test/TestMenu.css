@@ -1,0 +1,116 @@
+body {
+  background: linear-gradient(95deg, orange, white);
+}
+
+* {
+  padding: 0;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.imgQuiz {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 111111;
+}
+
+.quizForm {
+  visibility: hidden;
+  margin: 0;
+  color: white;
+  background-color: black;
+  height: 100vh;
+  opacity: 0.98;
+  z-index: 11111;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  overflow: hidden;
+  -webkit-transition: all 750ms ease-in-out;
+  transition: all 750ms ease-in-out;
+}
+
+.quizForm.open {
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.mainQuiz {
+  padding: 10rem;
+}
+
+.mainQuiz .quizeOption {
+  font-size: 2rem;
+  padding: 1rem;
+  color: white;
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+  overflow: hidden;
+  -webkit-transition: all 950ms ease-in-out;
+  transition: all 950ms ease-in-out;
+}
+
+.mainQuiz .quizeOption.open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.quizeOption:nth-child(1) {
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+.quizeOption:nth-child(2) {
+  -webkit-transition-delay: 0.35s;
+          transition-delay: 0.35s;
+}
+
+.quizeOption:nth-child(3) {
+  -webkit-transition-delay: 0.45s;
+          transition-delay: 0.45s;
+}
+
+.quizeOption:nth-child(4) {
+  -webkit-transition-delay: 0.55s;
+          transition-delay: 0.55s;
+}
+
+.quizeOption:nth-child(5) {
+  -webkit-transition-delay: 0.65s;
+          transition-delay: 0.65s;
+}
+
+.quizeOption:nth-child(6) {
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+}
+
+.quizeOption:nth-child(7) {
+  -webkit-transition-delay: 0.85s;
+          transition-delay: 0.85s;
+}
+
+.quizeOption:nth-child(8) {
+  -webkit-transition-delay: 0.95s;
+          transition-delay: 0.95s;
+}
+
+.quizeOption:nth-child(9) {
+  -webkit-transition-delay: 1.05s;
+          transition-delay: 1.05s;
+}
+
+.quizeOption:nth-child(10) {
+  -webkit-transition-delay: 1.15s;
+          transition-delay: 1.15s;
+}
+/*# sourceMappingURL=TestMenu.css.map */
